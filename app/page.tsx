@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 
+// Liquid Glass Inventory Preview - v1.0
 export default function InventoryPreview() {
   const [activeCategory, setActiveCategory] = useState(0)
   const [currentValues, setCurrentValues] = useState({
