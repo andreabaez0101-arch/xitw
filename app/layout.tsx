@@ -4,12 +4,11 @@ import "./globals.css"
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-poppins",
+  weight: ["300", "400", "500", "600", "700"],
 })
 
 export const metadata: Metadata = {
-  title: "Liquid Glass Inventory UI",
+  title: "Liquid Glass Inventory",
   description: "Modern inventory interface with liquid glass design",
 }
 
@@ -20,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} font-sans antialiased`}>{children}</body>
+      <body className={poppins.className}>{children}</body>
     </html>
   )
 }
